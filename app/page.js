@@ -63,18 +63,18 @@ export default function Home() {
 
 	return (
 		<motion.div {...anim(opacity)} className="page">
-			<div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-5 md:px-10 py- bg--100">
+			<div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-5 md:px-10 py-2 bg--100">
 				{/* Left Section */}
-				<div className="w-full md:w-1/2 text-center md:text-left">
+				<div className="w-full md:w-1/2 text-left md:text-left">
 					<div>
-						<h6 className="text-sm font-semibold text-gray-800 bg-lime-200 inline-block px-3 rounded-full mb-3 mt-3">
+						<h6 className="text-sm font-semibold text-gray-800 bg-lime-200 inline-block px-3 rounded-full mb-2 mt-3">
 							#1 Business Setup Expert IN UAE, 2024
 						</h6>
 					</div>
-					<h3 className="text-4xl md:text-6xl font-bold mb-3 text-gray-900 tracking-tighter">
-						Custom business <br /> setups solution
+					<h3 className="text-4xl md:text-6xl font-semibold mb-1 md:mb-3 text-gray-900 tracking-tighter">
+						Custom business setups solution
 					</h3>
-					<h2 className="text-3xl md:text-6xl font-semibold mb-7 text-green-900">
+					<h2 className="text-3xl md:text-6xl font-semibold mb-2 md:mb-7 text-green-900">
 						<motion.span
 							key={words[currentIndex]}
 							initial="initial"
@@ -89,7 +89,7 @@ export default function Home() {
 						Partner with the best to make your business journey seamless and
 						rewarding
 					</p>
-					<ul className="flex items-center flex-col md:items-start text-base md:text-lg font-medium text-gray-600 mb-6 list-none pl-0">
+					<ul className="hidden md:flex items-center flex-col md:items-start text-base md:text-lg font-medium text-gray-600 mb-6 list-none pl-0">
 						<li className="flex items-center mb-2">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +151,7 @@ export default function Home() {
 
 					<a
 						href="/login"
-						className="text-sm inline-flex items-center justify-center bg-green-900 text-white px-6 py-3 rounded-md font-semibold group relative overflow-hidden mb-4"
+						className="text-sm inline-flex items-center justify-center bg-green-900 text-white px-6 py-3 rounded-md font-semibold group relative overflow-hidden mb-1 mt-2 md:mt-0"
 					>
 						<i className="fas fa-sign-in-alt mr-2 transition-all duration-300 group-hover:text-indigo-600 z-20"></i>
 						<span className="relative z-10 group-hover:text-green-900">
