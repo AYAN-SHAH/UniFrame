@@ -48,7 +48,9 @@ const Navbar = () => {
 					{[
 						{ name: "Home", href: "/" },
 						{ name: "About", href: "/about" },
-						{ name: "packages", href: "/packages" },
+						{ name: "Packages", href: "/packages" },
+						{ name: "Events", href: "/events" },
+
 						{ name: "Contact", href: "/contact" },
 					].map((link, index) => (
 						<motion.li
@@ -110,6 +112,9 @@ const Navbar = () => {
 					{[
 						{ name: "Home", href: "/" },
 						{ name: "About", href: "/about" },
+						{ name: "Packages", href: "/packages" },
+						{ name: "Events", href: "/events" },
+
 						{ name: "Contact", href: "/contact" },
 					].map((link, index) => (
 						<li key={index}>

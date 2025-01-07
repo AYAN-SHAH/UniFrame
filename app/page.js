@@ -63,7 +63,7 @@ export default function Home() {
 
 	return (
 		<motion.div {...anim(opacity)} className="page">
-			<div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-5 md:px-10 py-5 bg-gray-100">
+			<div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-5 md:px-10 py- bg--100">
 				{/* Left Section */}
 				<div className="w-full md:w-1/2 text-center md:text-left">
 					<div>

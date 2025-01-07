@@ -61,7 +61,7 @@ Find the Perfect Plan for You
 
 	`;
 
-	const words = paragraph.split("  ");
+	const words = paragraph.split(" ");
 
 	const [visibleWords, setVisibleWords] = useState([]);
 
@@ -74,7 +74,7 @@ Find the Perfect Plan for You
 			} else {
 				clearInterval(interval);
 			}
-		}, 50); // Adjust the interval to control the speed
+		}, 10); // Adjust the interval to control the speed
 		return () => clearInterval(interval);
 	}, []); // Removed `words` from the dependency array
 
@@ -101,7 +101,7 @@ Find the Perfect Plan for You
 								initial={{ opacity: 0, filter: "blur(4px)" }}
 								animate={{ opacity: 1, filter: "blur(0px)" }}
 								transition={{
-									duration: 0.5,
+									duration: 1,
 									ease: "easeInOut",
 								}}
 								className="inline-block mr-1"

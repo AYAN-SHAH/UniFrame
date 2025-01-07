@@ -36,7 +36,7 @@ export default function ContactSection() {
 		Reach out to us, and our friendly team will get back to you as soon as possible.
 	`;
 
-	const words = paragraph.split(" ");
+	const words = paragraph.split("  ");
 
 	const [visibleWords, setVisibleWords] = useState([]);
 
@@ -55,16 +55,16 @@ export default function ContactSection() {
 
 	return (
 		<motion.div {...anim(opacity)} className="page">
-			<div className="flex flex-col items-center md:items-start justify-center px-8 py-8 sm:px-16 sm:py-16 bg-gray-100">
+			<div className="flex flex-col items-center md:items-start justify-center px-8 py-8 sm:px-16 sm:py-16 bg--100">
 				<div>
-					<h6 className="text-lg font-bold text-gray-800 bg-lime-200 inline-block px-2 rounded-full">
+					<h6 className="text-sm font-bold text-gray-800 bg-lime-200 inline-block px-2 rounded-full">
 						Contact Us
 					</h6>
 				</div>
 
 				<p
-					className="mt-4 text-3xl sm:text-7xl text-center md:text-left max-w-full font-semibold"
-					style={{ minHeight: "200px", width: "85%" }} // Adjust width to 100% and height as needed
+					className="mt-4 text-3xl sm:text-7xl text-center md:text-left max-w-full font- tracking-tight lette"
+					style={{ minHeight: "80px", width: "85%" }} // Adjust width to 100% and height as needed
 				>
 					{visibleWords.map((word, index) => (
 						<motion.span
@@ -81,7 +81,6 @@ export default function ContactSection() {
 						</motion.span>
 					))}
 				</p>
-
 				{/* Horizontal Rule */}
 				<hr className="my-8 border-t-1 border-black" />
 
