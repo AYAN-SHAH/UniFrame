@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className="bg-green-900 text-white">
+		<footer className="bg-green-900 text-white  bottom-0 left-0 mt-6 ">
 			<div className="footer-container flex flex-wrap justify-between p-8">
 				<div className="footer-section w-full sm:w-1/2 md:w-1/4 p-4">
 					<h3 className="text-xl font-bold mb-4">
@@ -61,8 +61,8 @@ const Footer = () => {
 					<p>Sunday: Closed</p>
 				</div>
 			</div>
-			<div className="footer-bottom bg-green-950 text-center py-4">
-				<p>
+			<div className="footer-bottom bg-green-950 text-center py-4 ">
+				<p className="px-4">
 					© 2025 All Rights Reserved. Design and Developed by{" "}
 					<strong>DEV</strong>.
 				</p>
