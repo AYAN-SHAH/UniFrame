@@ -48,6 +48,7 @@ const Navbar = () => {
 					{[
 						{ name: "Home", href: "/" },
 						{ name: "About", href: "/about" },
+						{ name: "packages", href: "/packages" },
 						{ name: "Contact", href: "/contact" },
 					].map((link, index) => (
 						<motion.li

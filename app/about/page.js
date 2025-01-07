@@ -33,7 +33,7 @@ const AboutSection = () => {
 	};
 
 	return (
-		<motion.div {...anim(opacity)} className="relative w-full h-screen">
+		<motion.div {...anim(opacity)} className="relative w-full h-[90vh]">
 			{/* Background Image */}
 			<div
 				className="absolute inset-0 bg-cover bg-center"
@@ -44,18 +44,18 @@ const AboutSection = () => {
 			></div>
 
 			{/* Content */}
-			<div className="absolute inset-x-0 bottom-0 flex flex-col items-start px-4 md:px- pb-12 space-y-6 max-w-7xl mx-auto">
+			<div className="absolute inset-x-0 bottom-0 flex flex-col items-start px-4 md:px- pb-12 space-y-6 max-w-8xl mx-auto">
 				{/* Full overlay div for all text with black background and opacity */}
 				<div className="relative p-8 w-full">
 					{/* Glass effect div */}
 					<div className="relative z-10 backdrop-blur-sm bg-black/30 p-6 rounded-xl">
 						{/* Small Heading */}
-						<h6 className="text-left font-bold text-gray-800 bg-lime-200 inline-block px-4 py-1 rounded-full my-3">
+						<h6 className="text-left font-bold text-gray-800 bg-lime-200 inline-block px-2 py- rounded-full my-1 text-sm">
 							About Us
 						</h6>
 
 						{/* Large Heading */}
-						<h1 className="text-3xl md:text-5xl font-semibold text-white text-left my-3">
+						<h1 className="text-3xl md:text-6xl  tracking-tighter  font- text-white text-left my-3">
 							Unispire is your one-stop solution for{" "}
 							<span className="text-lime-200">business</span>{" "}
 							<span className="text-lime-200">setup</span>,{" "}
@@ -65,7 +65,7 @@ const AboutSection = () => {
 
 						{/* Small Paragraph */}
 						<div className="flex justify-start md:justify-end">
-							<p className="text-sm md:text-lg w-full md:w-1/2 text-justify pr-4 md:pr-12 text-white">
+							<p className="text-sm md:text-lg w-full md:w-1/2 text-justify pr-4 md:px- tracking-tight text-white">
 								Startups, entrepreneurs, and growing businesses will find the
 								perfect partner here. Join hands with Unispire, and let’s
 								transform your corporate journey into a seamless and successful
