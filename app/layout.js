@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer";
+import ProgressProvider from "./components/ProgressProvider";
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Navbar />
-				<AnimatePresence mode="wait">{children}</AnimatePresence>
+				<AnimatePresence mode="wait">
+					<ProgressProvider>{children}</ProgressProvider>
+				</AnimatePresence>
 				<Footer />
 			</body>
 		</html>
